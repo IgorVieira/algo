@@ -1,5 +1,6 @@
 let algo = {}
-
+// 1.4
+// Analyse Algoritm
 algo.swap = (a, b) => {
   let time
   
@@ -19,5 +20,48 @@ algo.swap = (a, b) => {
   F(n) = 3
 
 */
+
+// 1.5
+// Frequency count method
+
+algo.sum = (a, n) => {
+  let s = 0                       // 1
+  for (let i = 0; i < n; i++) {   // n+1
+    s = s+a[i]                    // n
+  }
+
+  return s                        // 1
+                                  // _____
+                                  // f(n) 2n+3
+}
+
+/*
+  Space:
+  s = 1
+  i = 1
+  a = 1
+  n = n
+
+  Space: S(n) = n+3
+
+  Time Function: F(n) = 2n + 3
+*/
+
+
+
+algo.add = (a, b, n) => {
+  let c = []
+  
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      c[i,j] = a[i,j] + b[i,j]
+    }
+  }
+
+  return c
+}
+
+
+
 
 module.exports = algo
