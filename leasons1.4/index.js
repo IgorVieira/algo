@@ -52,14 +52,32 @@ algo.sum = (a, n) => {
 algo.add = (a, b, n) => {
   let c = []
   
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-      c[i,j] = a[i,j] + b[i,j]
+  for (let i = 0; i < n; i++) {        // n+1
+    for (let j = 0; j < n; j++) {      // n x (n+1)
+      c[i,j] = a[i,j] + b[i,j]         // n x n 
     }
   }
 
   return c
 }
+
+
+/*
+  Space:
+  A - n²
+  B - n²
+  C - n²
+  I - 1
+  J - 1
+  N - 1
+
+  S(n) = 3n² + 3
+
+  Time Function:
+
+  F(n) = 2n² + 2n + 1
+
+*/
 
 
 
