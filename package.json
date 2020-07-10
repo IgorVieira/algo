@@ -1,0 +1,28 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "leason01.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorVieira/algo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgorVieira/algo/issues"
+  },
+  "homepage": "https://github.com/IgorVieira/algo#readme",
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "mocha": "^8.0.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25"
+  }
+}
