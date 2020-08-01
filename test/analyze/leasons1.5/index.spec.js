@@ -1,4 +1,4 @@
-const algo = require('../../leasons1.5');
+const algo = require('../../../analyze/leasons1.5');
 
 test('concat numbers', () => {
   expect(algo.concatNum(10)).toBe(9);
